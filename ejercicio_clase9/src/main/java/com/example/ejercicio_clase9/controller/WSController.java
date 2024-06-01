@@ -18,7 +18,7 @@ public class WSController {
         this.charactersRepository = charactersRepository;
     }
 
-    //Listar personajes
+    //Listar personajes, falta usar los parámetros indicados
     @GetMapping(value = "/list")
     public List<Characters> listCharacters() {
         return charactersRepository.findAll();
